@@ -20,6 +20,9 @@ jobs:
     - run: flutter build apk
     - run: flutter build ios --release --no-codesign
     # Upload generated apk to the artifacts.
+    - name: Archive IOS
+      run: |
+        mkdir artifacts
     - name: Upload Android Artifacts
       uses: actions/upload-artifact@v1
       with:
