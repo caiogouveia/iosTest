@@ -29,5 +29,5 @@ jobs:
     - name: Upload IOS Artifacts
       uses: actions/upload-artifact@v1
       with:
-       name: Artefacts
-       path: build/app/outputs/ios/release/Artifacts
+       name: Artifacts
+       path: ./artifacts
