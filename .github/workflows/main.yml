@@ -1,3 +1,9 @@
+# This workflow is triggered on pushes to the repository.
+
+on:
+  push:
+    branches:
+    - Main
 jobs:
   build:
     runs-on: macos-latest
