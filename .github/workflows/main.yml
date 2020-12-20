@@ -26,8 +26,9 @@ jobs:
         path: build/app/outputs/apk/release/app-release.apk
     # Make a zip from ipa IOS
     - name: Make Artefact
+      # /Users/runner/work/iosTest/iosTest/build/ios/iphoneos/Runner.app.
       run: |
-       zip artefact.zip App.ipa App.app.dSYM.zip
+       zip artefact.zip Runner.app
     # upload the IOS zip
     - uses: actions/upload-artifact@v1
       with:
